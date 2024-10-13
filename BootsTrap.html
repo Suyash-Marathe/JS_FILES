@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function submit() {
+            var a = document.getElementById("username").value;
+            var b = document.getElementById("passward").value;
+
+            let choice = confirm("Login ?");
+            if (choice == true) {
+                alert("Form Submitted !");
+            }
+            else {
+                alert("Authentication Revoked !");
+            }
+        }
+    </script>
+
+    <style>
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <label>Usernmae : </label>
+    <input type="username" id="username" />
+
+    <label>Passward : </label>
+    <input type="passward" id="passward" />
+
+    <input type="button" value="Submit" onclick="submit()" />
+</body>
+
+</html>

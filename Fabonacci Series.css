@@ -1,0 +1,32 @@
+#title {
+    color: blue;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    background-color: aquamarine;
+}
+
+#input {
+    color: chartreuse;
+    font-size: 60px;
+    font-style: italic;
+    background-color: coral;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#float {
+    color: darkorange;
+    font-size: 166px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: burlywood;
+}
+
+#button {
+    background-color: cornflowerblue;
+}
+
+body {
+    background-color: darkkhaki;
+}

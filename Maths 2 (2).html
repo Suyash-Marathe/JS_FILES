@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Maths</title>
+        <style>
+            h1 {
+                color: darkslateblue;
+                text-decoration: underline;
+                background-color: yellow;
+            }
+            h2 {
+                font-size: 40px;
+                font-style: italic;
+                color: crimson;
+                font-family: monospace;
+                font-weight: bold;
+                background-color: fuchsia;
+            }
+            h3 {
+                font-weight: bold;
+                font-size: 60px;
+                background-color: greenyellow;
+            }
+            body {
+                background-color: aqua;
+            }
+        </style>
+        <script>
+            function add()
+            {
+                let number1 = parseFloat(document.getElementById("num1").value);
+                let number2 = parseFloat(document.getElementById("num2").value);
+                let add = parseFloat(number1 + number2);
+                alert("Addtion = "+ add);
+            }
+            function sub()
+            {
+                let number1 = parseFloat(document.getElementById("num1").value);
+                let number2 = parseFloat(document.getElementById("num2").value);
+                let sub = parseFloat(number1 - number2);
+                alert("Substraction = "+ sub);
+            }
+            function mul()
+            {
+                let number1 = parseFloat(document.getElementById("num1").value);
+                let number2 = parseFloat(document.getElementById("num2").value);
+                let mul = parseFloat(number1 * number2);
+                alert("Multiplication = "+ mul);
+            }
+            function div()
+            {
+                let number1 = parseFloat(document.getElementById("num1").value);
+                let number2 = parseFloat(document.getElementById("num2").value);
+                let div = parseFloat(number1 / number2);
+                alert("Division = "+ div);
+            }
+            function rem()
+            {
+                let number1 = parseFloat(document.getElementById("num1").value);
+                let number2 = parseFloat(document.getElementById("num2").value);
+                let rem = parseFloat(number1 % number2);
+                alert("Remainder = "+ rem);
+            }
+            function changebg()
+            {
+                document.body.style.backgroundColor="red";
+            }
+            function resetbg()
+            {
+                document.body.style.backgroundColor="aqua";
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <h1>Maths</h1>
+        </center>
+        <center>
+            <h2>
+                Enter First Number : <input type="number" id="num1" name="num1" onmouseover="changebg()" onmouseout="resetbg()"/>
+                <br><br>Enter Second Number : <input type="number" id="num2" name="num2" onmouseover="changebg()" onmouseout="resetbg()"/>
+            </h2>
+        </center>
+        <center>
+            <h3>
+                <br><br><br><br><input type="button" value="+" onclick="add()" />
+                <input type="button" value="-" onclick="sub()" />
+                <input type="button" value="*" onclick="mul()" />
+                <input type="button" value="/" onclick="div()" />
+                <input type="button" value="%" onclick="rem()" />
+            </h3>
+        </center>
+    </body>
+</html>

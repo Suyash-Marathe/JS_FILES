@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Login Page</title>
+		<style>
+			h1 {
+				color: red;
+				font-weight: bold;
+				text-decoration: underline;
+				font-size: 60px;
+				font-family: monospace;
+				background-color: skyblue;
+			}
+			h2 {
+				color: blue;
+				font-weight: bold;
+				font-style: italic;
+				font-size: 40px;
+				font-family: cursive;
+				background-color: lightgreen;
+			}
+			h3 {
+				background-color: silver;
+			}
+			body {
+				background-color: yellow;
+			}
+		</style>
+		<script>
+			function login()
+			{
+				let uname = document.getElementById("username").value;
+				let pass = document.getElementById("passward").value;
+				let choice = confirm("Do You Want To Login ?");
+				if (choice == true)
+				{
+					pass = prompt("Enter The Passward Again :");
+				}
+				else
+				{
+					document.write("Bye !!");
+				}
+				if (uname == "Admin" && pass == "Admin123")
+				{
+					alert("Welcome Admin !!!");
+				}
+				else
+				{
+					alert("Sorry !!! Invalid Credentials.");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<h1>LOGIN-PAGE</h1>
+			<h2>
+				Username : <input type="text" id="username" name="username" />
+				<br>Passward : <input type="text" id="passward" name="passward" />
+			</h2>
+			<h3>
+				<br><br><input type="button" value="Login" onclick="login()" />
+			</h3>
+		</center>
+	</body>
+</html>

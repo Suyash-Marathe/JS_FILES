@@ -1,0 +1,15 @@
+* {
+    color: darkred;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+body {
+    background-color: darkorange;
+}

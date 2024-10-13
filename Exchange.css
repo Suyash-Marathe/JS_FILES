@@ -1,0 +1,10 @@
+* {
+    color: crimson;
+    font-weight: bold;
+    font-family: monospace;
+    font-style: italic;
+    font-size: 60px;
+}
+body {
+    background-color: aqua;
+}

@@ -1,0 +1,37 @@
+.title {
+    color: blue;
+    font-size: 100px;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: burlywood;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.input {
+    color: crimson;
+    font-size: 56px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: darkkhaki;
+    text-align: center;
+}
+
+.float {
+    color: darkorange;
+    font-size: 180px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    background-color: darkolivegreen;
+    text-align: center;
+}
+
+.button {
+    background-color: darkgoldenrod;
+    text-align: center;
+}
+
+body {
+    background-color: aquamarine;
+}

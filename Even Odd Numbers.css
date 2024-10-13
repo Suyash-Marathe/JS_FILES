@@ -1,0 +1,30 @@
+.title {
+    color: chartreuse;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 80px;
+    background-color: cadetblue;
+}
+
+.input {
+    color: chocolate;
+    font-style: italic;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: burlywood;
+}
+
+.float {
+    color: darkblue;
+    background-color: coral;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 160px;
+}
+
+.button {
+    background-color: crimson;
+    text-align: center;
+}

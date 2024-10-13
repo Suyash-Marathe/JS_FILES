@@ -1,0 +1,12 @@
+* {
+	color: red;
+	font-family: consolas;
+	text-decoration: underline;
+	font-size: 60px;
+	text-align: center;
+	font-weight: bold;
+	background-color: yellow;
+}
+
+body {
+	background-color: blue;

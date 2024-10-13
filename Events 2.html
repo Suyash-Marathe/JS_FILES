@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Events</title>
+	<style>
+		h1 {
+			color: blue;
+			font-weight: bold;
+			font-family: fantasy;
+		}
+		* {
+			color: green;
+			font-weight: bold;
+			font-family: cursive;
+		}
+		.button {
+			color: red;
+			font-weight: bold;
+			font-family: consolas;
+		}
+		body {
+			background-color: yellow;
+		}
+	</style>
+	<script>
+		function show()
+		{
+			let uname=document.getElementById("username").value;
+			alert("Username = "+uname);
+			let pass=document.getElementById("passward").value;
+			alert("Passward = "+pass);
+			let dob=document.getElementById("dob").value;
+			alert("Date Of Birth = "+dob);
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<h1>Login Form</h1>
+	</center>
+	<center>
+		<br>Username : <input type="text" id="username" name="username" />
+		<br>Passward : <input type="passward" id="passward" name="passward" />
+		<br>Date Of Birth : <input type="date" id="dob" name="dob" />
+	</center>
+	<br><br>
+	<center>
+		<input type="button" value="Login In" onclick="show()" />
+	</center>
+</body>
+</html>

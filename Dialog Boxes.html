@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Dialog Boxes</title>
+	<script>
+		function alertdemo()
+		{
+			alert("This is alert box.");
+		}
+		function promptdemo()
+		{
+			let p = prompt("Enter the number :");
+		}
+		function confirmdemo()
+		{
+			let choice = confirm("Are you sure !");
+			if (choice == true)
+			{
+				document.write("Welcome !");
+			}
+			else
+			{
+				document.write("Bye !");
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="Alert Box" onclick="alertdemo()" />
+	<input type="button" value="Prompt Box" onclick="promptdemo()" />
+	<input type="button" value="Confirm Box" onclick="confirmdemo()" />
+</body>
+</html>

@@ -1,0 +1,36 @@
+.title {
+	color: blue;
+	font-family: arial;
+	font-size: 100px;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: silver;
+	text-align: center;
+}
+
+.input {
+	color: red;
+	font-style: italic;
+	font-family: monospace;
+	font-weight: bold;
+	background-color: pink;
+	font-size: 60px;
+	text-align: center;
+}
+
+.float {
+	color: purple;
+	font-family: sans-serif;
+	font-size: 180px;
+	background-color: orange; 
+	text-align: center;
+}
+
+.button {
+	background-color: maroon;
+	text-align: center;
+}
+
+body {
+	background-color: gold;
+}

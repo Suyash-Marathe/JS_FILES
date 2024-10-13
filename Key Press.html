@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Hover</title>
+		<script>
+			function changebg()
+			{
+				document.body.style.backgroundColor='red';
+			}
+			function resetbg()
+			{
+				document.body.style.backgroundColor='white';
+			}
+			function keypressdemo()
+			{
+				console.log("Key Pressed");
+			}
+				function keydowndemo()
+			{
+				console.log("Key Down");
+			}
+			function keyupdemo()
+			{
+				console.log("Key Up");
+			}
+		</script>
+	</head>
+	<body>
+		<input type="box" onmouseover="changebg()" onmouseout="resetbg()" onkeypress="keypressdemo()" onkeydown="keydowndemo()" onkeyup="keyupdemo()" />
+	</body>
+</html>

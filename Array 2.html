@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Array 2</title>
+	</head>
+	<body>
+		<script>
+			let studlist1 = ['Nayan', 'Ganga'];
+			let studlist2 = ['Ramesh', 'Rajesh'];
+
+			let all = studlist1.concat(studlist2);
+			document.write(all);
+
+			document.write("<br>Index Of Ramesh = "+all.indexOf('Ram'));
+
+			document.write("<br>Is Ganga Available ? = "+all.includes('Ganga'));
+
+			all.sort();
+			document.write("<br>Sorted Array = "+all);
+
+			document.write("<br>Reverse = "+all.reverse());
+		</script>
+	</body>
+</html>

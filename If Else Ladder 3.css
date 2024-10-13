@@ -1,0 +1,11 @@
+* {
+	color: white;
+	font-family: consolas;
+	text-decoration: underline;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+body {
+	background-color: black;
+}

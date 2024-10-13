@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Events</title>
+	<style>
+		h1 {
+			color: blue;
+			font-weight: bold;
+			font-family: fantasy;
+			text-decoration: underline;
+		}
+		* {
+			color: green;
+			font-weight: bold;
+			font-family: cursive;
+			font-size: 40px;
+		}
+		body {
+			background-color: yellow;
+		}
+	</style>
+	<script>
+		function show()
+		{
+			let uname=document.getElementById("username").value;
+			alert("Username = "+uname);
+			let pass=document.getElementById("passward").value;
+			alert("Passward = "+pass);
+			let dob=document.getElementById("dob").value;
+			alert("Date Of Birth = "+dob);
+			let age=document.getElementById("age").value;
+			alert("Age : "+age);
+			let phone=document.getElementById("phone").value;
+			alert("Mobile Number : "+phone);
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<h1>Login Form</h1>
+	</center>
+	<center>
+		<br>Username : <input type="text" id="username" name="username" />
+		<br>Passward : <input type="passward" id="passward" name="passward" />
+		<br>Date Of Birth : <input type="date" id="dob" name="dob" />
+		<br>Age : <input type="number" name="age" id="age" />
+		<br>Mobile Number : <input type="number" name="phone" id="phone" />
+	</center>
+	<br><br>
+	<center>
+		<input type="button" value="Login In" onclick="show()" />
+	</center>
+</body>
+</html>

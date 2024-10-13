@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Form</title>
+        <script>
+        
+                function changebg()
+                {
+                    document.body.style.backgroundColor='red';
+                }
+
+                function resetbg()
+                {
+                    document.body.style.backgroundColor='blue';
+                }
+
+                function keypressed()
+                {
+                    console.log("Key Pressed !");
+                }
+
+                function keyupdemo()
+                {
+                    console.log("Key Up !");
+                }
+
+                function keydown()
+                {
+                    console.log("Key Down !");
+                }
+            
+        </script>
+        <body>
+            <form>
+                Username : <input type="text" id="uname" onmouseover="changebg()" onmouseout="resetbg()" onkeypress="keypressed()" onkeydown="keydown()" onkeyup="keyupdemo()" onfocus="focus()" onblur="blur()"/>
+                <input type="button" onclick="check()" />
+            </form>
+        </body>
+    </head>
+</html>

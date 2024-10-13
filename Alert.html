@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Alert</title>
+	<style>
+		* {
+			font-size: 40px;
+		}
+		body {
+			background-color: brown;
+		}
+	</style>
+	<script>
+		function alertdemo()
+		{
+			alert ("This Is Alert Box !");
+		}
+		function promptdemo()
+		{
+			let name = prompt("Enter The Name : ");
+			if (name == "") 
+			{
+				document.write("Enter The Name : ")
+			}
+			else
+			{
+				document.write("Name = "+name);
+			}
+		}
+		function confirmdemo()
+		{
+			let choice = confirm("Do You Want To Enter ?");
+			if (choice == true)
+			{
+				document.write("Welcome !");
+			}
+			else
+			{
+				document.write("Bye !");
+			}
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<br><br><input type="button" value="Alert Box" onclick="alertdemo()" />
+		<br><br><input type="button" value="Prompt Box" onclick="promptdemo()" />
+		<br><br><input type="button" value="Confirm Box" onclick="confirmdemo()" />
+	</center>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Exchange 2</title>
+        <style>
+            * {
+                color: crimson;
+                font-weight: bold;
+                font-size: 40px;
+            }
+            body {
+                background-color: aqua;
+            }
+        </style>
+        <script>
+            function usd()
+            {
+                let rs = document.getElementById("inr").value;
+                alert("Entered Rupees In Dollars = "+ rs * 0.0121);
+            }
+            function jpy()
+            {
+                let rs = document.getElementById("inr").value;
+                alert("Entered Rupees In Yen = "+ rs * 1.8159);
+            }
+            function chy()
+            {
+                let rs = document.getElementById("inr").value;
+                alert("Entered Rupees In Yuan = "+ rs * 0.0868);
+            }
+            function brl()
+            {
+                let rs = document.getElementById("inr").value;
+                alert("Entered Rupees In Real = "+ rs * 0.0603);
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            Enter The Rupees :
+            <br><br><input type="number" id="inr" name="inr"/>
+            <br><br><br><br><input type="button" value="DOLLAR" onclick="usd()" />
+            <input type="button" value="YEN" onclick="jpy()" />
+            <input type="button" value="YUAN" onclick="chy()" />
+            <input type="button" value="REAL" onclick="brl()" />
+        </center>
+    </body>
+</html>

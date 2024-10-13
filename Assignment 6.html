@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Assignment 6</title>
+		<style>
+			body {
+				background-color: silver;
+			}
+		</style>
+		<script>
+			function onmouseoverdemo()
+			{
+				document.body.style.backgroundColor='blue';
+			}
+			function onmouseoutdemo()
+			{
+				document.body.style.backgroundColor='silver';
+			}
+			function onkeypressdemo()
+			{
+				console.log("Key Pressed.");
+			}
+			function onkeydowndemo()
+			{
+				console.log("Key Down.");
+			}
+			function onkeyupdemo()
+			{
+				console.log("Key Up.");
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<input type="text" onmouseover="onmouseoverdemo()" onmouseout="onmouseoutdemo()" onkeypress="onkeypressdemo()" onkeydown="onkeydowndemo()" onkeyup="onkeyupdemo()" />
+		</center>
+	</body>
+</html>

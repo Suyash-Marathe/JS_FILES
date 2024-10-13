@@ -1,0 +1,13 @@
+* {
+	color: purple;
+	font-size: 40px;
+	text-decoration: underline;
+	font-family: serif;
+	font-weight: bold;
+	font-size: italic;
+	text-align: center;
+}
+
+body {
+	background-color: yellow;
+}

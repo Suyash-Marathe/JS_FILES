@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <script>
+            let flowers = ["Rose", "Sunflower", "Lily"];
+            console.log(flowers.length);
+
+            flowers[2] = "Lotus";
+
+            console.log(flowers)
+
+            flowers.push("Mango");
+            console.log(flowers);
+
+            flowers.pop();
+            console.log(flowers);
+
+            let index1 = flowers.indexOf("Sunflower");
+            console.log(index1);
+
+            let c = flowers[2].concat(" ", "Apple"," ", flowers[1]);
+            console.log(c);
+
+            let valuetofind = flowers.includes("Sunflower");
+            console.log(valuetofind);
+
+            let sorting = flowers.sort();
+            console.log(sorting);
+
+            let numbers = [22, 44, 66, 88];
+            
+            let n1 = numbers.slice(0, 2);
+            console.log(n1);
+
+            let numbers2 = [11, 22, 33, 44, 55, 66, 70, 88, 99];
+            let n2 = numbers2.splice(6, 1, 77);
+            console.log(n2);
+            console.log(numbers2);
+        </script>
+    </body>
+</html>

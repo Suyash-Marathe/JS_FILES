@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Confirm Button</title>
+	<script>
+		function popup()
+		{
+			let uname=document.getElementById("username").value;
+			if (uname === "")
+			{
+				alert("Please Enter The Username.");
+			}
+			else
+			{
+				alert("Username : "+uname);
+			}
+			let pass=document.getElementById("passward").value;
+			if (pass === "")
+			{
+				alert("Please Enter The Passward.");
+			}
+			else
+			{
+				alert("Passward : "+pass);
+			}
+		}
+	</script>
+	<style>
+		h1 {
+			color: purple;
+			font-size: 60px;
+			text-decoration: underline;
+			font-family: cursive;
+			font-weight: bold;
+			background-color: silver;
+		}
+		h3 {
+			color: green;
+			font-size: 40px;
+			font-weight: bold;
+			background-color: orange;
+			font-family: serif;
+		}
+		h2 {
+			background-color: pink;
+			font-size: 40px;
+		}
+		body {
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<center>
+			<h1>Login Page</h1>
+		</center>
+	<center>
+		<h3>
+			<br>Username : <input type="text" id="username" name="username" />
+			<br>Passward : <input type="passward" id="passward" name="passward" />
+		</h3>
+	</center>
+	<center>
+		<h2><br><br><input type="button" value="Login" onclick="popup()" /></h2>
+	</center>
+</body>
+</html>

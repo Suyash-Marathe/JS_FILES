@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Assignment 6</title>
+        <style>
+
+        </style>
+        <script>
+            function login()
+            {
+                let uname = document.getElementById("username").value;
+                let pass = docuemnt.getElementById("passward").value;
+                
+                if (uname == "Admin" && pass == "Admin123")
+                {
+                    alert("Welcome Admin !");
+                }
+                else
+                {
+                    alert("Sorry Invalid Credentials !");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <h1>LOGIN-FORM</h1>
+            <h2>
+                Username : <input type="text" id="username" name="username" />
+                <br>Passward : <input type="text" id="passward" name="passward" />
+            </h2>
+            <br><br><input type="button" value="Login" onclick="login()" />
+        </center>
+    </body>
+</html>

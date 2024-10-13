@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Fabonacci Series</title>
+        <style>
+            #title {
+                color: blue;
+                font-size: 80px;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-decoration: underline;
+                background-color: aquamarine;
+            }
+
+            #input {
+                color: chartreuse;
+                font-size: 60px;
+                font-style: italic;
+                background-color: coral;
+                font-weight: bold;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            #float {
+                color: darkorange;
+                font-size: 166px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                background-color: burlywood;
+            }
+
+            #button {
+                background-color: cornflowerblue;
+            }
+
+            body {
+                background-color: darkkhaki;
+            }
+        </style>
+        <script>
+            function changebg()
+            {
+                document.body.style.backgroundColor='maroon';
+            }
+
+            function resetbg()
+            {
+                document.body.style.backgroundColor='pink';
+            }
+
+            function print()
+            {
+                let n = document.getElementById("number").value;
+                if (n == "")
+                {
+                    let level = prompt("Enter The Number : ");
+
+                    let choice = confirm("Do You Want To Print Series ?");
+                    if (choice == true)
+                    {
+                        let a=0, b=1, c=0, level;
+
+                        document.write("", a);
+                        console.log("", a);
+
+                        document.write("<br>", b);
+                        console.log("", b);
+
+                        for (let i=1; i<=level; i++)
+                        {
+                        c = a + b;
+                        document.write("<br>", c);
+                        console.log("", c);
+
+                        a = b;
+                        b = c;
+                        }
+                    }
+                    else
+                    {
+                        alert("Bye !!");
+                    }
+                }
+                else
+                {
+                    let choice = confirm("Do You Want To Print Series ?");
+                    if (choice == true)
+                    {
+                        let a=0, b=1, c=0;
+
+                        document.write("", a);
+                        console.log("", a);
+
+                        document.write("<br>", b);
+                        console.log("", b);
+
+                        for (let i=1; i<=n; i++)
+                        {
+                            c = a + b;
+                            document.write("<br>", c);
+                            console.log("", c);
+
+                            a = b;
+                            b = c;
+                        }
+                    }
+                    else
+                    {
+                        alert("Bye !!");
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <div id="title">
+                FABONACCI SERIES
+            </div>
+            <div id="input">
+                Enter The Level : <input type="number" id="number" onmouseover="changebg()" onmouseout="resetbg()" />
+            </div>
+            <div id="float">
+                <marquee behavior="alternate" scrolldelay="40%" direction="right">
+                    FABONACCI
+                    <br>
+                    ---SERIES---
+                </marquee>
+            </div> 
+            <div id="button">
+                <input type="button" value="Print Series" onclick="print()" />
+            </div>
+        </center>
+    </body>
+</html>
